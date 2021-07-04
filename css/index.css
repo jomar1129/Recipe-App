@@ -24,6 +24,10 @@ nav {
   align-items: center;
 }
 
+.container {
+  height: 100%;
+}
+
 .bg-orange {
   border-radius: 10px;
   background: #b9520df3;
@@ -65,7 +69,14 @@ nav > h1 {
 
 .recipeCard > img {
   width: 80%;
+  height: 200px;
   margin: auto;
+}
+
+#addRecipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -173,4 +184,11 @@ li {
 
 .functonInputs button:hover {
   background-color: #e26410f3;
+}
+
+footer {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  background: #b9520df3;
 }

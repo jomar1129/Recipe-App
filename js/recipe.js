@@ -1,5 +1,5 @@
 const createTaskHtml = (id, name, description, course, recipe, time) => {
-  console.log(recipe);
+  console.log(course);
   const sentence = recipe.split("\n");
   let newHtml = "";
   newHtml = ` <li>   <div
@@ -7,7 +7,9 @@ const createTaskHtml = (id, name, description, course, recipe, time) => {
       style="width: 18rem"
       data-task-id="${id}"
     >
-      <img src="src/image.png" class="card-img-top" alt="recipe-book" />
+      <img src = ${
+        foodLogos[course]
+      } class=" mt-3 card-img-top" alt="recipe-book" />
       <div class="card-body bg-orange text-center">
         <h1
           class="headerTitle card-title text-center"
@@ -45,6 +47,12 @@ const createTaskHtml = (id, name, description, course, recipe, time) => {
     </li>`;
 
   return newHtml;
+};
+
+let foodLogos = {
+  appetizer: "src/appetizer.jpg",
+  "main course": "src/maincourse.jpg",
+  dessert: "src/desserts.jpg",
 };
 
 class RecipeManager {
