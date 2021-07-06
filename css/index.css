@@ -6,8 +6,9 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   /* background: #328fd6; */
   /* background: url(../images/background.jpg); */
   background-repeat: no-repeat;
@@ -20,7 +21,7 @@ body {
 
 nav {
   text-align: center;
-  background: #b9520df3;
+  background: #b9520d6b;
   align-items: center;
 }
 
@@ -30,7 +31,7 @@ nav {
 
 .bg-orange {
   border-radius: 10px;
-  background: #b9520df3;
+  background: #b9520d6b;
 }
 
 .inputs {
@@ -56,9 +57,19 @@ nav > h1 {
   /* align-items: center;
   display: flex; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 1s;
   cursor: pointer;
+  background-color: rgba(226, 219, 219, 0.555);
+  border-radius: 10px;
+  padding: 10px;
 }
+
+.cards {
+  background-color: rgba(226, 219, 219, 0.555);
+}
+
+/* .card-text {
+  background-color: rgba(226, 219, 219, 0.555);
+} */
 
 .recipeCard:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -79,12 +90,11 @@ nav > h1 {
   justify-content: center;
 }
 
-.card {
+/* .card {
   width: 25%;
-  background-color: #f4f4f4;
   border: none;
   border: 2px rgb(231, 91, 10, 0.5) solid;
-}
+} */
 
 .card-text {
   background-color: #f4f4f4;
@@ -179,7 +189,7 @@ li {
   height: 40px;
   border: none;
   border-radius: 5px;
-  background-color: #b9520df3;
+  background: #b9520d6b;
 }
 
 .functonInputs button:hover {
@@ -190,5 +200,5 @@ footer {
   font-weight: 800;
   font-size: 20px;
   text-align: center;
-  background: #b9520df3;
+  background: #b9520d6b;
 }

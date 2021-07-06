@@ -23,24 +23,24 @@ const createTaskHtml = (id, name, description, course, recipe, time) => {
         </h1>
       </div>
       <div div class="previewCard card-body collapse" id="collapse${id}">
-        <h5 class="card-text fw-bold">
+        <h5 class="cards card-text fw-bold">
           <i class="far fa-sticky-note"></i> Description
         </h5>
-        <p class="card-text fw-500">${description}</p>
-        <h5 class="card-text fw-bold">
+        <p class=" cards card-text fw-500">${description}</p>
+        <h5 class=" cards card-text fw-bold">
           <i class="fas fa-utensils"></i> Course
         </h5>
-        <p class="card-text fw-500">${course.toUpperCase()}</p>
+        <p class=" cards card-text fw-500">${course.toUpperCase()}</p>
         <p></p>
-        <h5 class="card-text fw-bold">
+        <h5 class=" cards card-text fw-bold">
           <i class="fas fa-blender"></i> Ingridients
         </h5>
-        <p class="card-text fw-500">${sentence}</p>
+        <p class=" cards card-text fw-500">${sentence}</p>
         <p></p>
-        <h5 class="card-text fw-bold">
+        <h5 class=" cards card-text fw-bold">
           <i class="far fa-clock"></i> Preparation Time
         </h5>
-        <p class="card-text fw-500">${time} minutes</p>
+        <p class=" cards card-text fw-500">${time} minutes</p>
         <i class="mt-2 mx-2 fas fa-trash btn-delete">Delete</i>
       </div>
     </div>
